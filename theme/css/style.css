@@ -119,8 +119,12 @@ article {
   body {
     background-color: #111;
     color: #eee;
+    
   }
-
+ .card {
+  background-color:#201e1e;
+  margin-top: 15px;
+ }
   a:link {
     color: #eee;
   }
@@ -152,12 +156,12 @@ article {
 
   a:link {
     color: #111;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   a:hover {
     color: #111;
-    text-decoration: inherit;
+    text-decoration: underline;
   }
 
   a:visited {
@@ -529,9 +533,10 @@ article {
 }
 
 .card {
-  background-color: #201e1e;
+  /* background-color: #201e1e; */
   width: 60%;
   margin: auto;
+  margin-top: 15px;
 }
 
 .contact-footer {
