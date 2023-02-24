@@ -55,7 +55,7 @@
   
 </head>
 
-<body id="index" class="home">
+<body id="index" class="home" >
 
 
 
@@ -362,7 +362,29 @@
 
 </div>
 
-
+<script>
+    // get all accordion buttons
+    const accordionButtons = document.querySelectorAll('.accordion-button');
+  
+    // add click event listener to each button
+    accordionButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // get the corresponding accordion item
+        const accordionItem = button.closest('.accordion-item');
+  
+        // wait a few milliseconds for the accordion item to open and set its height
+        setTimeout(() => {
+          // get the top position of the accordion item
+          const position = accordionItem.getBoundingClientRect().top + window.pageYOffset;
+  
+          // scroll the accordion item to the top of the screen
+          window.scrollTo({ top: position, behavior: 'smooth' });
+        }, 400);
+      });
+    });
+  </script>
+  
+  
 
 
 
