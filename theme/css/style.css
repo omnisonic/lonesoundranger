@@ -138,14 +138,13 @@ article {
   }
 
   nav {
-    background-color: #111;
-    !important;
+    background-color: #111 !important;
   }
 
   /*#banner {*/
   /*color: #eee;*/
   /*}*/
-}
+
 
 /* prefers-color-scheme: light */
 @media (prefers-color-scheme: light) {
@@ -169,8 +168,7 @@ article {
   }
 
   nav {
-    background-color: #eee;
-    !important;
+    background-color: #eee !important;
   }
 
   /*#banner {*/
@@ -591,4 +589,9 @@ article {
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+}
+
+h1 {
+  font-size: 8rem;
+  letter-spacing: 20px;
 }
