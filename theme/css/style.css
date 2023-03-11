@@ -576,7 +576,7 @@ article {
   .accordion-button:not(.collapsed) {
     font-family: proxima-nova;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 2rem;
     color: inherit;
     background-color: inherit;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
