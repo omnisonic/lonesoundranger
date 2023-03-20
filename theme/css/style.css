@@ -613,3 +613,7 @@ article {
   margin-right: auto;
   margin-left: auto;
 } */
+
+.container {
+  max-width: 600px;
+}
