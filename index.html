@@ -345,7 +345,7 @@
 
                   <div class="container mt-5 mx-auto">
 
-                    <form action="https://formspree.io/f/YOUR_FORMSPREE_FORM_ID" method="POST">
+                    <form action="https://formspree.io/f/mayzpqvn" method="POST">
                       <div class="mb-3">
                         <label for="name" class="form-label">Name:</label>
                         <input type="text" class="form-control" id="name" name="name" required>
@@ -356,6 +356,7 @@
                       </div>
                       <button type="submit" class="btn btn-primary">Sign Up</button>
                     </form>
+                    
                   </div>
                 </div>
               </div>
@@ -375,7 +376,7 @@
                 <div class=" w-100">
                   <div class="card-body">
    
-                    <form action="https://formspree.io/f/YOUR_FORMSPREE_FORM_ID" method="POST">
+                    <form action="https://formspree.io/f/mayzpqvn" method="POST">
                       <div class="mb-3">
                         <label for="name" class="form-label">Name:</label>
                         <input type="text" class="form-control" id="name" name="name" required>
@@ -454,6 +455,20 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+
+        <!-- This script to clear the form after submit-->
+        <script>
+            document.querySelectorAll('form').forEach(form => {
+              form.addEventListener('submit', (event) => {
+                setTimeout(() => {
+                  form.reset();
+                  alert('Your message was sent successfully!');
+                }, 100); // Delay the form reset for 100 milliseconds
+              });
+            });
+          </script>
+          
+          
 
 </body>
 
